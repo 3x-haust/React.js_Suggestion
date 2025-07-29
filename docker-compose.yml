@@ -3,6 +3,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.server
+      args:
+        - VITE_SERVER_PORT=${VITE_SERVER_PORT}
+        - JWT_SECRET=${JWT_SECRET}
     ports:
       - "${VITE_SERVER_PORT}:${VITE_SERVER_PORT}"
     volumes:
@@ -16,6 +19,13 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.client
+      args:
+        - VITE_AUTH_CLIENT_ID=${VITE_AUTH_CLIENT_ID}
+        - VITE_AUTH_CLIENT_SECRET=${VITE_AUTH_CLIENT_SECRET}
+        - VITE_AUTH_REDIRECT_URI=${VITE_AUTH_REDIRECT_URI}
+        - VITE_AUTH_SCOPES=${VITE_AUTH_SCOPES}
+        - VITE_ADMIN_NAMES=${VITE_ADMIN_NAMES}
+        - VITE_API_BASE_URL=${VITE_API_BASE_URL}
     ports:
       - "8443:8443"
     depends_on:

@@ -5,6 +5,12 @@ WORKDIR /app
 COPY package*.json ./
 COPY yarn.lock ./
 
+ARG VITE_SERVER_PORT
+ARG JWT_SECRET
+
+ENV VITE_SERVER_PORT=$VITE_SERVER_PORT
+ENV JWT_SECRET=$JWT_SECRET
+
 RUN yarn install
 
 COPY server.js ./
