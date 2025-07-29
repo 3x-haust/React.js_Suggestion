@@ -1,0 +1,130 @@
+export const lightTheme = {
+  colors: {
+    primary: '#4F46E5',
+    primaryHover: '#4338CA',
+    primaryLight: '#E0E7FF',
+    secondary: '#64748B',
+    secondaryHover: '#475569',
+    success: '#10B981',
+    successHover: '#059669',
+    danger: '#EF4444',
+    dangerHover: '#DC2626',
+    warning: '#F59E0B',
+    warningHover: '#D97706',
+    info: '#3B82F6',
+    infoHover: '#2563EB',
+    
+    background: '#F8FAFC',
+    surface: '#FFFFFF',
+    surfaceHover: '#F1F5F9',
+    cardBackground: '#FFFFFF',
+    
+    text: '#0F172A',
+    textSecondary: '#64748B',
+    textMuted: '#94A3B8',
+    textLight: '#CBD5E1',
+    
+    border: '#E2E8F0',
+    borderLight: '#F1F5F9',
+    borderDark: '#CBD5E1',
+    
+    input: '#FFFFFF',
+    inputBorder: '#D1D5DB',
+    inputFocus: '#4F46E5',
+    inputBackground: '#F9FAFB',
+    
+    shadow: 'rgba(15, 23, 42, 0.04)',
+    shadowMedium: 'rgba(15, 23, 42, 0.08)',
+    shadowLarge: 'rgba(15, 23, 42, 0.12)',
+    shadowXl: 'rgba(15, 23, 42, 0.16)',
+  },
+  spacing: {
+    xs: '0.25rem',
+    sm: '0.5rem',
+    md: '1rem',
+    lg: '1.5rem',
+    xl: '2rem',
+    '2xl': '3rem',
+    '3xl': '4rem',
+  },
+  borderRadius: {
+    sm: '0.375rem',
+    md: '0.5rem',
+    lg: '0.75rem',
+    xl: '1rem',
+    '2xl': '1.5rem',
+    full: '9999px',
+  },
+  transitions: {
+    fast: '0.15s cubic-bezier(0.4, 0, 0.2, 1)',
+    normal: '0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+    slow: '0.5s cubic-bezier(0.4, 0, 0.2, 1)',
+  },
+  breakpoints: {
+    sm: '640px',
+    md: '768px',
+    lg: '1024px',
+    xl: '1280px',
+    '2xl': '1536px',
+  },
+  fonts: {
+    sans: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    mono: 'ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace',
+  },
+  fontSizes: {
+    xs: '0.75rem',
+    sm: '0.875rem',
+    base: '1rem',
+    lg: '1.125rem',
+    xl: '1.25rem',
+    '2xl': '1.5rem',
+    '3xl': '1.875rem',
+    '4xl': '2.25rem',
+  },
+};
+
+export const darkTheme = {
+  ...lightTheme,
+  colors: {
+    ...lightTheme.colors,
+    primary: '#6366F1',
+    primaryHover: '#5B21B6',
+    primaryLight: '#312E81',
+    secondary: '#64748B',
+    secondaryHover: '#475569',
+    success: '#10B981',
+    successHover: '#059669',
+    danger: '#EF4444',
+    dangerHover: '#DC2626',
+    warning: '#F59E0B',
+    warningHover: '#D97706',
+    info: '#3B82F6',
+    infoHover: '#2563EB',
+    
+    background: '#0F172A',
+    surface: '#1E293B',
+    surfaceHover: '#334155',
+    cardBackground: '#1E293B',
+    
+    text: '#F8FAFC',
+    textSecondary: '#CBD5E1',
+    textMuted: '#94A3B8',
+    textLight: '#64748B',
+    
+    border: '#334155',
+    borderLight: '#475569',
+    borderDark: '#1E293B',
+    
+    input: '#1E293B',
+    inputBorder: '#475569',
+    inputFocus: '#6366F1',
+    inputBackground: '#0F172A',
+    
+    shadow: 'rgba(0, 0, 0, 0.25)',
+    shadowMedium: 'rgba(0, 0, 0, 0.35)',
+    shadowLarge: 'rgba(0, 0, 0, 0.45)',
+    shadowXl: 'rgba(0, 0, 0, 0.55)',
+  },
+};
+
+export type Theme = typeof lightTheme;
