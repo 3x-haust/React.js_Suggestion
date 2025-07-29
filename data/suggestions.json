@@ -1,0 +1,52 @@
+{
+  "suggestions": [
+    {
+      "id": "1753713984865",
+      "content": "제목: test\n\ntest",
+      "createdAt": "2025-07-28T14:46:24.865Z",
+      "isRead": true
+    },
+    {
+      "id": "1753717209600",
+      "content": "제목: test\n\ntest",
+      "createdAt": "2025-07-28T15:40:09.600Z",
+      "isRead": false
+    },
+    {
+      "id": "1753717453785",
+      "content": "제목: test\n\ntest",
+      "createdAt": "2025-07-28T15:44:13.785Z",
+      "isRead": false
+    },
+    {
+      "id": "1753720491351",
+      "content": "제목: tes\n\nset",
+      "createdAt": "2025-07-28T16:34:51.351Z",
+      "isRead": false
+    },
+    {
+      "id": "1753720514045",
+      "content": "제목: asdf\n\nasdf",
+      "createdAt": "2025-07-28T16:35:14.046Z",
+      "isRead": false
+    },
+    {
+      "id": "1753720531899",
+      "content": "제목: ets\n\nasdf",
+      "createdAt": "2025-07-28T16:35:31.899Z",
+      "isRead": false
+    },
+    {
+      "id": "1753723465456",
+      "content": "제목: asdf\n\nasdf",
+      "createdAt": "2025-07-28T17:24:25.456Z",
+      "isRead": false
+    },
+    {
+      "id": "1753723516279",
+      "content": "제목: asdf\n\nasd",
+      "createdAt": "2025-07-28T17:25:16.279Z",
+      "isRead": false
+    }
+  ]
+}

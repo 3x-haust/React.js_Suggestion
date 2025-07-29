@@ -1,0 +1,30 @@
+services:
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile.server
+    ports:
+      - "${VITE_SERVER_PORT}:${VITE_SERVER_PORT}"
+    volumes:
+      - ./data:/app/data
+    env_file:
+      - .env
+    networks:
+      - suggestion-network
+
+  client:
+    build:
+      context: .
+      dockerfile: Dockerfile.client
+    ports:
+      - "8443:8443"
+    depends_on:
+      - server
+    env_file:
+      - .env
+    networks:
+      - suggestion-network
+
+networks:
+  suggestion-network:
+    driver: bridge
